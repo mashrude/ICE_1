@@ -1,4 +1,5 @@
 /*
+ * Modifier: Devansh Mashhruwala / Student id: 991648634
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -45,7 +46,15 @@ public class Card
         this.suits = suits;
     }
    //number
+    public int generateRank()
+    {
+        return((int)(Math.random()*13)+1);
+    }
     
     //method for suits
+    public String generateSuit()
+    {
+        return(SUITS[(int)(Math.random()*4)]);
+    }
     
 }
