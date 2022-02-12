@@ -18,6 +18,11 @@ public class Card
     //constant
     public static final String [] SUITS = { "diamonds","clubs","spades","hearts"};
 
+    Card(int value,String suits)
+    {
+        this.value=value;
+        this.suits=suits;
+    }
     /**
      * @return the value
      */
